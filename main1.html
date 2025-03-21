@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard | SRKR Engineering College</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <img src="logo.jpg" alt="SRKR College Logo" />
+        <span>SRKR College</span>
+      </div>
+      <ul>
+        <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fas fa-book"></i> Academics</a></li>
+        <li><a href="#"><i class="fas fa-briefcase"></i> Placements</a></li>
+        <li><a href="#"><i class="fas fa-file-alt"></i> Syllabus</a></li>
+        <li><a href="index.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main">
+      <div class="main-top">
+        <h1>Welcome to SRKR Engineering College</h1>
+        <p>Track your attendance and academic progress.</p>
+      </div>
+
+      <!-- Cards Section -->
+      <div class="cards">
+        <!-- Student Profile Card -->
+        <div class="card profile-card">
+          <img src="student.jpg" alt="Student" />
+          <h4>ViswakSen</h4>
+          <p>Artificial Intelligence and Meachine Learning</p>
+          <div class="stats">
+            <div class="stat-item">
+              <span>88%</span>
+              <p>Attendance</p>
+            </div>
+            <div class="stat-item">
+              <span>320/360</span>
+              <p>Classes Attended</p>
+            </div>
+          </div>
+          <button>View Profile</button>
+        </div>
+
+        <!-- Subjects Overview Card -->
+        <div class="card subjects-card">
+          <img src="book.WEBP" alt="Subjects" />
+          <h4>Subjects Overview</h4>
+          <p>Check subject-wise attendance</p>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <span>Mathematics</span>
+              <div class="bar">
+                <div class="progress" style="width: 85%;"></div>
+              </div>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar">
+              <span>Physics</span>
+              <div class="bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+              <span>90%</span>
+            </div>
+            <div class="progress-bar">
+              <span>Programming</span>
+              <div class="bar">
+                <div class="progress" style="width: 78%;"></div>
+              </div>
+              <span>78%</span>
+            </div>
+          </div>
+          <button>View All Subjects</button>
+        </div>
+
+        <!-- Total Classes Card -->
+        <div class="card classes-card">
+          <img src="https://png.pngtree.com/element_our/png/20180823/career-coaching-logo-design-template-vector-png_62559.jpg" alt="Classes" />
+          <h4>Total Classes</h4>
+          <p>360 Conducted | 280 Attended</p>
+          <div class="attendance-summary">
+            <div class="summary-item">
+              <span class="present">280</span>
+              <p>Present</p>
+            </div>
+            <div class="summary-item">
+              <span class="absent">80</span>
+              <p>Absent</p>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <!-- Attendance Overview Section -->
+      <section class="attendance-overview">
+        <h1>Attendance Overview</h1>
+        <div class="overview-cards">
+          <div class="overview-card present-card">
+            <h4>Present</h4>
+            <span>280 Classes</span>
+            <div class="progress-circle">
+              <div class="circle present-circle" style="--progress: 78;"></div>
+              <span>78%</span>
+            </div>
+          </div>
+          <div class="overview-card absent-card">
+            <h4>Absent</h4>
+            <span>80 Classes</span>
+            <div class="progress-circle">
+              <div class="circle absent-circle" style="--progress: 22;"></div>
+              <span>22%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+</html>
